@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 
 function HomePage() {
   return (
+    
     <div className='box'>
       <img src={require('./../../img/Metroid_01_big.webp')} alt='cover Metroid'/>
         <p className='text'>BENVENUTO SU ZEBES!</p>
