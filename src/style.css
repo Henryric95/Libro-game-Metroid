@@ -1,0 +1,17 @@
+body {
+    background-image: url('./img/109511.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    overflow: hidden;
+}
+.box {
+    background-color: grey;
+    margin-top: 5px;
+}
+
+.text {
+    color: orange;
+    font-family: 'Times New Roman', Times, serif;
+}
