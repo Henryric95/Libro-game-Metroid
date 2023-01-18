@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { FC } from "react";
 
-function Button () {
-  return (
-    <div>
-        <button>Inizia</button>
-    </div>
-  )
-}
+type ButtonProps = {
+  text: string;
+  handlerOnClick: () => void;
+};
 
-export default Button
+const Button: FC<ButtonProps> = ({ text, handlerOnClick }) => {
+  return <button onClick={handlerOnClick}>{text}</button>;
+};
+
+export default Button;

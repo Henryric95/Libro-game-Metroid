@@ -1,17 +1,26 @@
 body {
-    background-image: url('./img/109511.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    overflow: hidden;
+  background-image: url("./img/109511.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 .box {
-    background-color: grey;
-    margin-top: 5px;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pippo {
+  display: flex;
+  background-color: grey;
 }
 
 .text {
-    color: orange;
-    font-family: 'Times New Roman', Times, serif;
+  color: white;
+  /* font-family: "Times New Roman", Times, serif; */
+  font-family: "Press Start 2P", cursive;
 }

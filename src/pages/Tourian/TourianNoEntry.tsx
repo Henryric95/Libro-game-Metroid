@@ -1,15 +1,28 @@
-import React from 'react'
-import '../../style.css'
-import {Link} from 'react-router-dom'
+import React from "react";
+import "../../style.css";
+import Box from "../../components/Box";
+import Button from "../../components/Button";
+import { useNavigate } from "react-router-dom";
 
 function TourianNoEntry() {
+  const navigate = useNavigate();
   return (
-    <div>
-        <p className='text'>Per entrare a Tourian devi prima sconfiggere i pirati spaziali</p>
+    <div className="pippo">
+      <Box
+        img={require("./../../img/istockphoto-1031642272-612x612.jpg")}
+        alt={"No entry"}
+        title={""}
+        text={"Per entrare a Tourian devi prima sconfiggere i pirati spaziali"}
+      />
+      <Button
+        handlerOnClick={() => navigate("/atterraggio")}
+        text="Torna indietro"
+      />
+      {/* <p className='text'>Per entrare a Tourian devi prima sconfiggere i pirati spaziali</p>
         <img src={require('./../../img/istockphoto-1031642272-612x612.jpg')} alt='No entry'/>
-        <Link to='/atterraggio' className='text'>Torna indietro</Link>
+        <Link to='/atterraggio' className='text'>Torna indietro</Link> */}
     </div>
-  )
+  );
 }
 
-export default TourianNoEntry
+export default TourianNoEntry;
